@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+	background-color: #f2f1ee;
+}
+
+.logo {
+  position: fixed;
+  height: 110px;
+  width: 110px;
+    background-image:
+    url("images/titlelogo.png");
+    background-size: 100%;
+    top:15px;
+    right: 30px;
+  z-index: 20;
+
+}
+
+/*.topgradient {
+  position: absolute;
+  top: 10vh;
+  height: 18vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(242,241,238,1), rgba(242,241,238,0));
+  z-index: 15;
+}
+
+.bottomgradient {
+  position: absolute;
+  bottom: 10vh;
+  height: 18vh;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(242,241,238,1), rgba(242,241,238,0));
+  z-index: 15;
+}*/
+
+.container {
+	position: relative;
+	height: 86vh;
+  width: 90vw;
+  left: 5vw;
+	box-sizing: border-box;
+  display: flex;
+  overflow: hidden;
+  top: 7vh;
+/*  border-radius: 50px;
+  border: 2px solid #1D7FCA;*/
+
+}
+
+.overlay {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  background-color: #f2f1ee;
+  transition: 0.5s ease;
+  animation: fadeInAnimation ease 2.5s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+}
+
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 1;
+                z-index: 2;
+            } 
+            100% { 
+                opacity: 0; 
+                z-index: 0;
+            } 
+        } 
+
+
+
+.image {
+
+text-decoration: none;
+  width: auto;
+  overflow: hidden;
+  flex-grow: 1;
+  transition: .5s;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.feature {
+	position: absolute;
+	background-color: #DE6E64;
+	font-family: Helvetica;
+  	color: #f2f1ee;
+ 	  text-transform: uppercase;
+  	font-size: 14px;
+  	letter-spacing: 2px;
+  	writing-mode: tb-rl;
+  	transform: rotate(-180deg);
+  	text-align: center;
+    padding: 10px;
+    height: 100%;
+    transition: .5s;
+}
+
+.image:hover {
+	flex-grow: 3;
+	max-width: 100%;
+}
+
+.image:hover .feature{
+	background-color: #1D7FCA;
+}
+
+
+#image1 {
+	background-image:
+  	url("images/rockefeller.jpg");
+}
+
+
+#image2 {
+	background-image:
+  	url("images/coffee.jpg");
+
+}
+
+#image3 {
+	background-image:
+  	url("images/florida.jpg");
+}
+
+#image4 {
+	background-image:
+  	url("images/law.jpg");
+}
+
+#image5 {
+	background-image:
+  	url("images/larry.jpg");
+}
+
+#image6 {
+	background-image:
+  	url("images/longisland.jpg");
+}
+
+#image7 {
+	background-image:
+  	url("images/huge.jpg");
+}
+
+#image8 {
+	background-image:
+  	url("images/thirty.jpg");
+}
+
+#image9 {
+	background-image:
+  	url("images/rockefeller.jpg");
+}
